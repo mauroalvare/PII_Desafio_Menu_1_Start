@@ -11,5 +11,15 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Dish
     {
+        public string Name { get; }
+        public double Price { get; }
+        public bool IsVegetarian { get; }
+
+        public Dish(string name, double price, bool isVegetarian)
+        {
+            Name = name;
+            Price = price;
+            IsVegetarian = isVegetarian;
+        }
     }
 }
