@@ -16,6 +16,15 @@ namespace Ucu.Poo.Restaurant
         private ArrayList order = new ArrayList();
 
         /// <summary>
+        /// Inicializa una nueva instancia de la clase <see cref="Table"/>.
+        /// </summary>
+        /// <param name="number">El número identificador de la mesa.</param>
+        public Table(int number)
+        {
+            this.Number = number;
+        }
+
+        /// <summary>
         /// Obtiene o establece el número identificador de la mesa.
         /// </summary>
         public int Number {get; set;}
